@@ -13,7 +13,10 @@
             --grayish-blue:hsl(229, 7%, 55%);
             --dark-blue:hsl(228, 56%, 26%);
             --very-dark-blue:hsl(229, 57%, 11%);
+        /*other*/
+        --background-gradient-blue-1:linear-gradient(180deg, rgba(12,18,44,1) 0%, rgb(32, 42, 88) 100%);        
 
+        
     /*layout*/
     --progress-bar-height:1rem;
 }
@@ -28,11 +31,20 @@
     margin:0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-size:14px;
     font-family: 'Raleway', sans-serif;
-
     background-color:var(--very-dark-blue);
+    background:var(--background-gradient-blue-1);
+
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -60,6 +72,7 @@ body {
     height:13rem;
     border-radius: 10px 100px 10px 10px;
     margin:1rem 0;
+    box-shadow: 0 10px 10px rgba(18, 18, 18, 0.275);
 }
 
 .component-section-1__logo {
@@ -109,6 +122,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 10px 10px rgba(18, 18, 18, 0.275);
 }
 
 .section-storage__heading {
